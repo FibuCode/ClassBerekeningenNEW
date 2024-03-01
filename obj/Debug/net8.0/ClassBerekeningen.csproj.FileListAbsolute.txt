@@ -1,0 +1,4 @@
+/home/frank/Desktop/Projects/ClassBerekeningen/obj/Debug/net8.0/ClassBerekeningen.GeneratedMSBuildEditorConfig.editorconfig
+/home/frank/Desktop/Projects/ClassBerekeningen/obj/Debug/net8.0/ClassBerekeningen.AssemblyInfoInputs.cache
+/home/frank/Desktop/Projects/ClassBerekeningen/obj/Debug/net8.0/ClassBerekeningen.AssemblyInfo.cs
+/home/frank/Desktop/Projects/ClassBerekeningen/obj/Debug/net8.0/ClassBerekeningen.csproj.CoreCompileInputs.cache
