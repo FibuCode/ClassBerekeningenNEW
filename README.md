@@ -14,8 +14,11 @@
 It is possible this list will be extended with more calculations in the future.
 
 > To run:
+>
 > download console app
+>
 > dotnet run ClassBerekeningenNEW
+>
 > Choose your options
 
 
