@@ -1,4 +1,5 @@
-﻿
+﻿using BerekeningRechtNamespace;
+using BerekeningRondNamespace;
 
 class Program {
     static void Main(string[] args){
@@ -21,12 +22,12 @@ class Program {
             case 1:
             Console.WriteLine("Ingave diameter van het kanaal in meters(m)");
             rond.Diameter = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"{rond.Diameter} m³/h");
+            Console.WriteLine($"diameter = {rond.Diameter} m");
 
             Console.WriteLine("Ingave gemeten snelheid(m/s)");
             rond.Snelheid = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"{rond.Snelheid} m/s");
-            Console.WriteLine($"{rond.OppervlakteRond()} m²");
+            Console.WriteLine($"snelheid = {rond.Snelheid} m/s");
+            Console.WriteLine($"oppervlakte = {rond.OppervlakteRond()} m²");
 
             Console.WriteLine($"Het gemeten debiet is {rond.DebietsBerekeningRond()} m³/h");
             break;
@@ -36,17 +37,17 @@ class Program {
             case 2:
             Console.WriteLine("Ingave lengte van het kanaal in meters(m)");
             recht.lengte = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"{recht.lengte} m");
+            Console.WriteLine($"lengte kanaal = {recht.lengte} m");
 
             Console.WriteLine("Ingave breedte van het kanaal in meters(m)");
             recht.breedte = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"{recht.breedte} m");
+            Console.WriteLine($"breedte kanaal = {recht.breedte} m");
 
             Console.WriteLine("Ingave gemeten snelheid (m/s)");
             recht.snelheid = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"{recht.snelheid} m/s");
+            Console.WriteLine($"gemeten snelheid = {recht.snelheid} m/s");
 
-            Console.WriteLine($"Het gemeten debiet is {recht.Debietsberekening()} m³/h");
+            Console.WriteLine($"Het gemeten debiet is {recht.DebietsBerekening()} m³/h");
             break;
         }        
     }

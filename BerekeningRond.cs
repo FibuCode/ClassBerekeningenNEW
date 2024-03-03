@@ -1,4 +1,5 @@
-
+namespace BerekeningRondNamespace
+{
 
     public class BerekeningRond{
         private double _diameter;
@@ -19,8 +20,9 @@
             return OppRond;
         }
 
-        public int DebietsBerekeningRond(){
-            double Debiet = Convert.ToInt32(0.25*OppervlakteRond()*_snelheid*3600);
+        public double DebietsBerekeningRond(){
+            double Debiet = Convert.ToDouble(0.25*OppervlakteRond()*_snelheid*3600);
             return Debiet;
         }
     }
+}
