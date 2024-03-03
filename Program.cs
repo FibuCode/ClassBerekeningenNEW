@@ -1,5 +1,6 @@
 ﻿using BerekeningRechtNamespace;
 using BerekeningRondNamespace;
+using BerekeningDrukNamespace;
 
 class Program {
     static void Main(string[] args){
@@ -15,6 +16,7 @@ class Program {
         //instantieren van de benodigde klasses in main
         BerekeningRond rond = new BerekeningRond();
         BerekeningRecht recht = new BerekeningRecht();
+        BerekeningDruk druk = new BerekeningDruk();
 
         switch(keuze){
 
@@ -49,6 +51,25 @@ class Program {
 
             Console.WriteLine($"Het gemeten debiet is {recht.DebietsBerekening()} m³/h");
             break;
+
+            //debietsberekening adhv toename of afname druk voor een gekend debiet
+            case 3:
+            Console.WriteLine("Ingave oud gemeten debiet m³/h");
+            druk.oudDebiet = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"oud debiet = {druk.oudDebiet} m³/h");
+
+            Console.WriteLine("Ingave oude druk in Pa");
+            druk.oudDruk = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"oude druk = {druk.oudDruk}Pa");
+
+            Console.WriteLine("Ingave nieuwe druk in Pa");
+            druk.nieuwDruk = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"nieuwe druk = {druk.nieuwDruk}Pa");
+
+            Console.WriteLine($"Het nieuwe berekend debiet is {druk.DebietsBerekening()}m³/h");
+            break;
+
+            
         }        
     }
 }
