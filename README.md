@@ -26,7 +26,8 @@ It is possible this list will be extended with more calculations in the future.
 
 
 **To do:**
-- Add ProportioneelBerekening class
+- Add ProportioneelBerekening class DONE
+- Figure out how to create an executable file and publish it 
 - Add BetrouwbaarheidsFactor class
 - Add Functionality to go back to a multiple choice menu for navigation
 
