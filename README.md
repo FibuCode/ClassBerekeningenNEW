@@ -1,6 +1,6 @@
 ### ClassBerekeningenNEW
 
-#Aerolic & Hydro calculations
+# Aerolic & Hydro calculations
 
 
 **This is a practice project that you can use to calculate volume flow values**
@@ -13,19 +13,19 @@
 
 It is possible this list will be extended with more calculations in the future.
 
->To run:
->download console app
->dotnet run ClassBerekeningenNEW
->Choose your options
+> To run:
+> download console app
+> dotnet run ClassBerekeningenNEW
+> Choose your options
 
 
 
 
 
 **To do:**
--Add ProportioneelBerekening class
--Add BetrouwbaarheidsFactor class
--Add Functionality to go back to a multiple choice menu for navigation
+- Add ProportioneelBerekening class
+- Add BetrouwbaarheidsFactor class
+- Add Functionality to go back to a multiple choice menu for navigation
 
 
 
