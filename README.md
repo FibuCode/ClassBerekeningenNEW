@@ -30,6 +30,7 @@ It is possible this list will be extended with more calculations in the future.
 - Figure out how to create an executable file and publish it 
 - Add BetrouwbaarheidsFactor class
 - Add Functionality to go back to a multiple choice menu for navigation
+- Catch errors with input that is not expected
 
 
 
