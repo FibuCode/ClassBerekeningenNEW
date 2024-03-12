@@ -1,6 +1,7 @@
 ﻿using BerekeningRechtNamespace;
 using BerekeningRondNamespace;
 using BerekeningDrukNamespace;
+using BerekeningBfactorNamespace;
 
 class Program {
     static void Main(string[] args){
@@ -10,6 +11,7 @@ class Program {
         Console.WriteLine("Optie 1 - KANAAL ROND");
         Console.WriteLine("Optie 2 - KANAAL RECHT");
         Console.WriteLine("Optie 3 - DEBIET ADHV DRUK");
+        Console.WriteLine("Optie 4 - BETROUWBAARHEIDSFACTOR");
 
         int keuze = Convert.ToInt32(Console.ReadLine());
 
@@ -17,7 +19,9 @@ class Program {
         BerekeningRond rond = new BerekeningRond();
         BerekeningRecht recht = new BerekeningRecht();
         BerekeningDruk druk = new BerekeningDruk();
+        BerekeningBfactor bfac = new BerekeningBfactor();
 
+       
         switch(keuze){
 
             //debietsberekening voor een rond kanaal
@@ -69,7 +73,12 @@ class Program {
             Console.WriteLine($"Het nieuwe berekend debiet is {druk.DebietsBerekening()}m³/h");
             break;
 
-            
+            case 4:
+            //standaardafwijking berekening van ingegeven metingen/betrouwbaarheidsfactor
+            Console.WriteLine("Geef een gemeten snelheid in m/s");
+            Console.WriteLine(bfac.PopulateArr());
+            break;
+
         }        
     }
 }
